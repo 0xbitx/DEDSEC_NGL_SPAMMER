@@ -9,7 +9,7 @@
 * git clone https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/.git
 * cd DEDSEC_NGL_SPAMMER/
 * pip3 install pystyle
-* python3 dedsec_ngl_spammer.py
+* python3 dedsec_ngl.py
 
 ### TESTED ON FOLLOWING
 * Kali Linux 
