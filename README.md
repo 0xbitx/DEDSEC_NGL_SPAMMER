@@ -7,7 +7,7 @@
 
 ### INSTALLATION [KALI - PARROT - TERMUX]
 * git clone https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/.git
-* cd DEDSEC_NGL_SPAMMER/
+* cd DEDSEC_NGL_SPAMMER
 * pip3 install pystyle
 * python3 dedsec_ngl.py
 
