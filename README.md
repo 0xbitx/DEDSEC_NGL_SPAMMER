@@ -1,6 +1,6 @@
 
 <p align="center">
-<img src="https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/blob/main/banner.png", width="500", height="500">
+<img src="https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/blob/main/banner.png", width="800", height="800">
 </p>
 <h1 align="center"> DEDSEC_NGL_SPAMMER</h1>
 <h4 align="center">DEDSEC_NGL_SPAMMER is a ngl spammer and exploit tool that can flood inbox and delete.</h4>
