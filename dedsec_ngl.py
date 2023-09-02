@@ -62,21 +62,7 @@ def generate_cookie():
 
 
 dark = Col.dark_gray
-light = Colors.StaticMIX((Col.cyan, Col.purple, Col.gray))
-acc = Colors.StaticMIX((Col.cyan, Col.purple, Col.blue, Col.gray))
 pheart = Colors.StaticMIX((Col.red, Col.purple))
-bpurple = Colors.StaticMIX((Col.purple, Col.cyan))
-
-def p(text):
-    return print(stage(text))
-
-def stage(text: str, symbol: str = '...', col1=light, col2=None) -> str:
-    if col2 is None:
-        col2 = light if symbol == '...' else pheart
-    if symbol in {'...', '!!!'}:
-        return f"""     {Col.Symbol(symbol, col1, dark)} {col2}{text}{Col.reset}"""
-    else:
-        return f""" {Col.Symbol(symbol, col1, dark)} {col2}{text}{Col.reset}"""
 
 
 text = r'''
@@ -118,7 +104,6 @@ text1 = '''\n\t        ╒══════════════════
          \t│ NGL SPAMMER TOOL BY 0XBIT │
          \t╘═══════════════════════════╛'''
 
-
 url = "https://ngl.link/api/submit"
 
 
@@ -153,10 +138,10 @@ def send_attack(username, message):
             responde_Code: int = response.status_code
             time.sleep(1)
             if responde_Code == 429:
-                print(tabulate([['SEND FAILED',f'{responde_Code}']], tablefmt='fancy_grid'))
+                print(tabulate([[f'{message}','message has not been sent to ',f'{username}']], tablefmt='fancy_grid'))
                 # time.sleep(10)
             elif responde_Code == 200:
-                print(tabulate([['SEND SUCCESS',f'{responde_Code}']], tablefmt='fancy_grid'))
+                print(tabulate([[f'{message}','message has been sent to ',f'{username}']], tablefmt='fancy_grid'))
         except KeyboardInterrupt:
             return menu()
 
