@@ -107,7 +107,8 @@ text1 = '''\n\t        ╒══════════════════
 url = "https://ngl.link/api/submit"
 
 
-def send_attack(username, message):
+def send_attack(username, message, payload):
+
     print(tabulate([['PRESS ENTER TO START','CTRL+C TO STOP']], tablefmt='fancy_grid'))
     input()
     while True:
@@ -138,10 +139,10 @@ def send_attack(username, message):
             responde_Code: int = response.status_code
             time.sleep(1)
             if responde_Code == 429:
-                print(tabulate([[f'{message}','message has not been sent to ',f'{username}']], tablefmt='fancy_grid'))
+                print(tabulate([[f'{payload}','message has not been sent to ',f'{username}']], tablefmt='fancy_grid'))
                 # time.sleep(10)
             elif responde_Code == 200:
-                print(tabulate([[f'{message}','message has been sent to ',f'{username}']], tablefmt='fancy_grid'))
+                print(tabulate([[f'{payload}','message has been sent to ',f'{username}']], tablefmt='fancy_grid'))
         except KeyboardInterrupt:
             return menu()
 
@@ -160,7 +161,7 @@ def menu():
         print(tabulate([['TYPE YOUR CRUSH USERNAME ','TYPE YOUR MESSAGE']], tablefmt='fancy_grid'))
         username = input(' [?] USERNAME: ')
         message = input(' [?] MESSAGE: ')
-        send_attack(username, message)
+        send_attack(username, message, payload=message)
     elif select == '2':
         os.system('clear')
         print(Colorate.Diagonal(Colors.DynamicMIX((pheart, dark)), (text)))
@@ -170,7 +171,7 @@ def menu():
         heart = ''''
         💗💗💗💗💗💗💗💗💗💗
         '''
-        send_attack(username, heart)
+        send_attack(username, heart, payload='HEART')
     elif select == '3':
         os.system('clear')
         print(Colorate.Diagonal(Colors.DynamicMIX((pheart, dark)), (text)))
@@ -188,7 +189,7 @@ def menu():
         ..........''...\.......... _.·´ 
         ............\..............(
         '''
-        send_attack(username, fuck)
+        send_attack(username, fuck, payload='FUCK')
     elif select == '4':
         os.system('clear')
         print(Colorate.Diagonal(Colors.DynamicMIX((pheart, dark)), (text)))
@@ -204,7 +205,7 @@ def menu():
         💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗
         💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗
         '''
-        send_attack(username, crash)
+        send_attack(username, crash, payload='Inbox crash exploit')
     elif select == '0':
         os.system('clear')
         sys.exit('BYE BYE!')
