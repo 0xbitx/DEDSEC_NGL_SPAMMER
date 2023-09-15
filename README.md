@@ -1,4 +1,7 @@
 
+> **Warning**
+> This tool cannot be used for now.
+
 <p align="center">
 <img src="https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/blob/main/banner.png", width="800", height="800">
 </p>
