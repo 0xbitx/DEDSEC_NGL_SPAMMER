@@ -12,7 +12,7 @@
 * git clone https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/.git
 * cd DEDSEC_NGL_SPAMMER
 * pip3 install pystyle pycryptodome
-* python3 dedsec_ngl.py
+* python3 dedsec_ngl_spammer.py
 
 ### TESTED ON FOLLOWING
 * Kali Linux 
