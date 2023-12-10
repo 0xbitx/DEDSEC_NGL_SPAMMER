@@ -6,9 +6,10 @@
 <h4 align="center">DEDSEC_NGL_SPAMMER is a ngl spammer and exploit tool that can flood someone inbox and delete using username only.</h4>
 
 ### INSTALLATION [KALI - PARROT - TERMUX]
-* git clone https://github.com/0xbitx/DEDSEC_NGL_SPAMMER/.git
+* git clone https://github.com/0xbitx/DEDSEC_NGL_SPAMMER.git
 * cd DEDSEC_NGL_SPAMMER
-* pip3 install pystyle pycryptodome
+* pip3 install pystyle
+* chmod +x dedsec_ngl
 * ./dedsec_ngl
 
 ### TESTED ON FOLLOWING
